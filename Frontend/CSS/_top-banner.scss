@@ -1,10 +1,15 @@
-.top-banner{
-    width:100%;
-    background: url('../Assets/Images/bg/bg-1.jpg') no-repeat center;
-    background-size:cover;
-    padding:16.875rem 0 9.375rem;
-    h1{
-        color:var(--primary-color)
+// *{
+//     border:2px solid black;
+// }
+.top-banner {
+  width: 100%;
+  background: url("../Assets/Images/bg/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 10.875rem 0 9.375rem;
+    .order{
+        @extend %filled-button;
     }
-  }
-  
+    .book{
+        @extend %transparent-button;
+    }
+}
