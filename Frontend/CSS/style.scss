@@ -1,0 +1,54 @@
+@import "nav";
+@import "top-banner";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+// Variables
+:root {
+  --primary-color: #a82c48;
+  --secondary-color: #43121d;
+  --tertiary-color: #f98169;
+  --text-color: #444343;
+  --text-gray: #999;
+  --black-color: #000;
+  --white-color: #fff;
+  --primary-font: "Roboto", sans-serif;
+  --secondry-font: "Quicksand", sans-serif;
+}
+// Global Styles
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+  }
+}
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 0.625rem;
+
+  &-track {
+    background: var(--white-color);
+  }
+
+  &-thumb {
+    background: var(--primary-color);
+  }
+}
+
