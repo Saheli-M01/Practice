@@ -1,0 +1,15 @@
+.story-section{
+    margin: 5rem auto;
+    .card img{
+        border-radius: 0.625rem;
+    }
+   .btn{
+    @extend %filled-button;
+   }
+   h6{
+    color:var(--tertiary-color);
+   }
+   h6 i{
+    color:var(--primary-color);
+   }
+}
