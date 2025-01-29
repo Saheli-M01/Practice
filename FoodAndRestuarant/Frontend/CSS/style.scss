@@ -86,7 +86,7 @@ html {
       margin-bottom: 0.5rem;
     }
     p {
-      font-size: 1rem;
+      
       color: var(--text-color);
       font-weight: 400;
       line-height: 2rem;
@@ -129,6 +129,11 @@ html {
         color: var(--white-color);
         background: none;
         background-color: var(--primary-color);
+      }
+      &:active {
+        background-color: var(--secondary-color);
+        transform: scale(0.98);
+        transition: transform 0.1s ease-in-out;
       }
     }
 

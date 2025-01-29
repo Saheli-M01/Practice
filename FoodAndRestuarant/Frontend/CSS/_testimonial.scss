@@ -1,50 +1,71 @@
 .testimonial-section {
-    margin-top: 100px;
-    background-color: var(--primary-color);
-    padding: 50px 0 100px;
-    h2 {
-      color: var(--white-color);
-      margin: 0;
-    }
-    .carousel {
-      background-color: var(--white-color);
-      border-radius: 0.9375rem;
-  
-      .carousel-item {
-        margin-top: 3rem;
-        padding: 10rem 3.125rem;
-       
-  
-        text-align: center;
-  
-        img {
-          max-width: 7rem;
-          border-radius: 50%;
-          padding: 0.3125rem;
-        }
-  
-        p {
-          font-size: 1.3125rem;
-          line-height: 2.0625rem;
-          padding: 0 11% 0.625rem;
-        }
-      }
-      .carousel-indicators {
-        bottom: -2.8125rem;
-        button {
-          width: 15px;
-          height: 15px;
-          outline: none;
-          border-radius: 50%;
-          border: none;
-          margin-right: 1rem;
-          opacity: 0.2;
-        }
-        .active {
-          opacity: 1;
-        }
-      }
-    }
-   
+  margin-top: 100px;
+  background-color: var(--primary-color);
+  padding: 50px 0 100px;
+  h2 {
+    color: var(--white-color);
+    margin: 0;
   }
-  
+  .carousel {
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    .carousel-item {
+      margin-top: 3rem;
+      padding: 10rem 3.125rem;
+      text-align: center;
+
+      img {
+        width: 7rem;
+        border-radius: 50%;
+        padding: 0.3125rem;
+      }
+
+      p {
+        font-size: 1.3125rem;
+        line-height: 2.0625rem;
+        padding: 0 11% 0.625rem;
+      }
+    }
+    .carousel-indicators {
+      bottom: -2.8125rem;
+      button {
+        width: 15px;
+        height: 15px;
+        outline: none;
+        border-radius: 50%;
+        border: none;
+        margin-right: 1rem;
+        opacity: 0.2;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+  }
+}
+//responsiveness
+@media only screen and (max-width: 550px) {
+  .testimonial-section {
+   .carousel{
+    .carousel-item{
+      p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        padding: 0 11% 0.625rem;
+      }
+    }
+    .carousel-indicators {
+      
+      button {
+        width: 10px;
+        height: 10px;
+        outline: none;
+        border-radius: 50%;
+        border: none;
+        margin-right: 1rem;
+        opacity: 0.2;
+      }
+   }
+  }
+}
+}
