@@ -1,0 +1,25 @@
+.footer {
+  background: var(--primary-color);
+
+  .footer-link {
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+    &:hover {
+      color: var(--primary-color);
+      text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+  }
+  h6{
+    font-weight: 200;
+  }
+}

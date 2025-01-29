@@ -1,0 +1,41 @@
+#explore-food {
+  margin-top: 5rem;
+  h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    h4{
+        color: var(--primary-color);
+       
+    }
+    img {
+      border-radius: 0.9375rem;
+      object-fit: cover;
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.4s ease;
+      }
+    }
+    span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      padding-bottom: 1rem;
+      border-bottom: 0.0625rem solid #eee;
+      del {
+        color: var(--text-gray);
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .btn {
+    @extend %filled-button;
+  }
+}

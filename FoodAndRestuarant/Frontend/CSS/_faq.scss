@@ -1,0 +1,27 @@
+.faq {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Assets/Images/bg/bg-3.jpg") no-repeat center;
+  background-size: cover;
+  padding: 80px 0;
+  h2 {
+    color: var(--white-color);
+    font-weight: 600;
+  }
+  h4 {
+    color: var(--tertiary-color);
+  }
+  p {
+    color: var(--white-color);
+  }
+  .btn {
+    @extend %button;
+    background: var(--white-color);
+    color: var(--primary-color);
+    border: 2px solid var(--white-color);
+    &:hover {
+      color: var(--tertiary-color);
+      background: none;
+      border: 2px solid var(--tertiary-color);
+    }
+  }
+}
